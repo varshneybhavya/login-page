@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <title>LOGIN PAGE</title>
+</head>
+<style>
+    body {
+          background:linear-gradient(to top ,rgba(0, 0, 0, 0.952) ,rgba(0, 0, 0, 0.155) ,rgba(0, 0, 0, 0.947)),url("https://assets.nflxext.com/ffe/siteui/vlv3/76c10fc9-7ccd-4fbf-bc59-f16a468921ca/4fb4af6e-d0ca-4c7f-b004-b34226727e55/IN-en-20230529-popsignuptwoweeks-perspective_alpha_website_small.jpg");     
+      /* background-repeat: no-repeat;
+      
+      background-size: cover;
+       height: 1200px;  */
+        width: 100%;
+    }
+
+    .parent {
+        /* border: 2px solid black; */
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.952), rgba(0, 0, 0, 0.155), rgba(0, 0, 0, 0.947)), url("https://assets.nflxext.com/ffe/siteui/vlv3/76c10fc9-7ccd-4fbf-bc59-f16a468921ca/4fb4af6e-d0ca-4c7f-b004-b34226727e55/IN-en-20230529-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+        background-repeat: no-repeat;
+
+        background-size: cover;
+        height: 1200px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        height: 1241px;
+        width: 100%;
+    }
+
+    .parent .logo {
+        background-image: url(/Netflix-Logo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .child {
+        /* border: 2px solid black; */
+        border-radius: 5px;
+        height: 54.5%;
+        width: 34%;
+        background: linear-gradient(rgba(0, 0, 0, 0.772), rgba(0, 0, 0, 0.635), rgba(0, 0, 0, 0.626));
+        margin: auto;
+        position: relative;
+        top: 110px;
+    }
+
+    .child h1 {
+        text-transform: capitalize;
+        color: white;
+        position: relative;
+        top: 44px;
+        left: 48px;
+        font-family: sans-serif;
+    }
+
+    .email input {
+        width: 72%;
+        height: 42px;
+        position: relative;
+        left: 45px;
+        top: 44px;
+        border-radius: 5px;
+        border: none;
+        background-color: #333;
+        outline: none;
+    }
+
+    .password input {
+        width: 72%;
+        height: 42px;
+        position: relative;
+        left: 45px;
+        top: 62px;
+        border-radius: 5px;
+        border: none;
+        background-color: #333;
+        outline: none;
+    }
+
+    .button {
+        background-color: red;
+        width: 72%;
+        height: 6%;
+        border-radius: 4px;
+        position: relative;
+        left: 46px;
+        top: 94px;
+        text-align: center;
+        cursor: pointer;
+        color: white;
+        font-size: 18px;
+        padding-top: 12px;
+        text-transform: capitalize;
+        font-family: sans-serif;
+    }
+
+    .tick {
+
+        position: relative;
+        top: 104px;
+        left: 44px;
+        color: gray;
+    }
+
+    .tick p {
+        position: relative;
+        left: 243px;
+        bottom: 36px;
+        color: gray;
+    }
+
+    .text3 {
+        position: relative;
+        top: 114px;
+        left: 48px;
+        color: grey;
+        font-family: sans-serif;
+    }
+
+    .text3 a {
+        color: white;
+    }
+
+    .text4 {
+        position: relative;
+        color: grey;
+        width: 77%;
+        top: 107px;
+        left: 47px;
+    }
+
+    .footer {
+        height: 255px;
+        background: linear-gradient(rgba(0, 0, 0, 0.626), rgba(0, 0, 0, 0.626), rgba(0, 0, 0, 0.639));
+        position: relative;
+        top: 19%;
+    }
+
+    .footer .footerparent {
+        width: 84%;
+        height: 84%;
+        /* border: 2px solid black; */
+        margin: 75px 90px;
+
+    }
+
+    .text5 {
+        position: relative;
+        top: 12%;
+        left: 5%;
+        color: grey;
+    }
+
+    .text5 a {
+        text-decoration: none;
+        color: grey;
+    }
+
+    .text5 a:hover {
+        text-decoration: underline grey;
+    }
+
+    .list {
+        display: flex;
+        margin-left: 18px;
+        margin-top: 65px;
+        line-height: 30px;
+        column-gap: 87px;
+    }
+
+    .list ul li a {
+        color: grey;
+        text-decoration: none;
+    }
+
+    .list ul li a:hover {
+        text-decoration: underline grey;
+        cursor: pointer;
+
+
+    }
+
+    .footerparent select {
+        position: relative;
+        left: 5%;
+        padding: 1%;
+        width: 12%;
+        text-align: right;
+        border: 1px solid gray;
+        border-radius: 3px;
+        background-color: black;
+        color: white;
+        top: 9%;
+    }
+    
+     .icon i {
+        color: GRAY;
+ 
+  position: relative;
+left: 12.6%;
+TOP: 186px
+    }
+</style>
+
+<body>
+    <div class="parent">
+        <div class="logo"></div>
+        <div class="child">
+            <h1>sign in </h1>
+            <div class="email">
+                <input type="email" name=email"" id="" placeholder="Email or Phone Number" width="60%" height="30%">
+            </div>
+            <div class="password">
+                <input type="password" placeholder="Password">
+
+            </div>
+
+            <div class="button">sign in</div>
+            <div class="tick"><input type="checkbox">Remember me
+                <p>Need help?</p>
+            </div>
+
+            <div class="text3">New to Netflix?<a href="https://varshneybhavya.github.io/livestream/">Sign up now</a>
+
+            </div>
+
+            <div class="text4">
+                <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="">Learn more.</a></p>
+            </div>
+
+        </div>
+
+
+        <div class="footer">
+            <div class="footerparent">
+                <div class="text5">Questions? Call <a href="#">000-800-919-1694</a></div>
+                <div class="list">
+                    <ul style="list-style: none;">
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Cookie Preferences</a></li>
+                    </ul>
+                    <ul style="list-style: none;">
+                        <li><a href="">Help Center</a></li>
+                        <li><a href="">Corporate Information</a></li>
+                    </ul>
+                    <ul style="list-style: none;">
+                        <li><a href="">Terms of use</a></li>
+
+                    </ul>
+                    <ul style="list-style: none;">
+                        <li><a href="">Privacy</a></li>
+                    </ul>
+                </div>
+                <select name="english" id="">
+                    <option value="">English</option>
+                    <option value="hind">हिंदी</option>
+                </select>
+            </div>
+        </div>
+        <div class="icon">
+        <i class="fa-sharp fa-solid fa-globe fa-sm" style="color: grey;"></i>
+        </div>
+    </div>
+</body>
+
+</html>
